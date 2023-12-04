@@ -6,41 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar producto</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilocrud.css">
 </head>
 
 <body>
-    <h1>Agregar Productos </h1>
-    <h3>Suplesport</h3>
+    <div class="contenedor">
+    
+        <h1 style="border: 2px   ; padding-top: 50px;" class="contenedor-subtitulo">Alta de Productos</h1>
 
-
-    <!--enctype="multipart/form-data es necesario para enviar archivos al back.-->
-    <form id="formulario" > <!-- ojo con este enctype anda para mandar files-->
+        
+            <!--enctype="multipart/form-data es necesario para enviar archivos al back.-->
+        <form id="formulario" > <!-- ojo con este enctype anda para mandar files-->
         <label for="codigo">Código:</label>
         <input type="text" id="codigo" name="codigo" required><br>
 
-        <label for="nombre">nombre:</label>
+        <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required><br>
 
-        <label for="descripcion">descripcion:</label>
+        <label for="descripcion">Descripcion:</label>
         <input type="text" id="descripcion" name="descripcion" required><br>
 
-        <label for="proveedor">proveedor:</label>
+        <label for="proveedor">Proveedor:</label>
         <input type="text"  id="proveedor" name="proveedor" required><br> 
 
-        <label for="categoria">categoria:</label>
+        <label for="categoria">Categoria:</label>
         <input type="text" id="categoria" name="categoria">
 
-        <label for="presentacion">presentacion:</label>
+        <label for="presentacion">Presentacion:</label>
         <input type="text" id="presentacion" name="presentacion">
         
         <label for="precio">Precio:</label>
         <input type="number" id="precio" name="precio">
         
-        <button type="submit">Agregar </button>
-        <a href="index.html">Menu principal</a>
+            <button type="submit">Agregar </button>
+        <a href="index2.html">Modulo ADMIN</a>
     </form>
 
+    
     <script>
         const URL = "http://127.0.0.1:5000/"
 

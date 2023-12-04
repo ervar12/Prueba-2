@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificar Producto</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilocrud.css">
 </head>
 
 <body>
-    <h1>Modificar Productos </h1>
-    <h3>Debe completar todos los campos</h3>
+  <div class="contenedor">
+    <h1 class="contenedor-subtitulo">Modificar Productos </h1>
+
     <div id="app">
         <form @submit.prevent="obtenerProducto">
             <label for="codigo">Código de producto a modificar: </label>
             <input type="text" v-model="codigo" required><br>
-            <button type="submit">Modificar </button> <a href="index.html">Menu principal</a>
+            <button type="submit">Modificar </button> <a href="index2.html">Modulo ADMIN</a>
         </form>
             <!--    id_prod, nuevo_nombre, nueva_descripcion, nuevo_proveedor, nueva_categoria, nueva_presentacion, nuevo_precio-->
         <div v-if="mostrarDatosProducto">
@@ -42,9 +43,10 @@
                 <input type="number" id="nuevo_precio" v-model="nuevo_precio" required><br>
 
                 <button type="submit">Guardar Cambios</button>
-                <a href="Modificacion.html">Cancelar</a>
+                <a href="Modificacion2.html">Cancelar</a>
             </form>
         </div>
+     </div>
     </div>
 
     <script src="https://unpkg.com/vue@next"></script> 
@@ -55,8 +57,8 @@
             data() {
                 return {
                     id_prod: '',
-                    nombre:'',
-                    descripcion: '',
+                    nombre_prod:'',
+                    des_prod: '',
                     proveedor: '', 
                     categoria: '',
                     presentacion: '',
@@ -70,8 +72,8 @@
                         .then(response => response.json())
                         .then(data => {
                             this.id_prod= data.codigo;
-                            this.nombre_prod= data.nombre;
-                            this.des_prod= data.descripcion;
+                            this.nombre_prod= data.nombre_prod;
+                            this.des_prod= data.des_prod;
                             this.proveedor = data.proveedor;
                             this.categoria=  data.categoria;
                             this.presentacion= data.presentacion;

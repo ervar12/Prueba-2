@@ -5,35 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Productos y Proveedores</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="estilocrud.css">
 </head>
 <body>
-    <h1>Bienvenido Administrador!</h1>
-    <h2>Gestión de Productos y Proveedores</h2>
+    <div class="contenedor">
+        <h1 class="contenedor-subtitulo">Listado de Productos</h1>
+
 
       <!--  <form action="#" method="get"> -->
 
             <table>
                 <thead>
                     <tr>
-                        <th>Código Producto</th>
-                        <th>Nombre Producto</th>
-                        <th>Descripción</th> 
-                        <th>Proveedor</th>                
-                        <th align="right">Categoria</th>
-                        <th>Presentación</th>
-                        <th align="right">Precio</th>
+                        <th>Código|</th>
+                        <th>Nombre|</th>
+                        <th>Proveedor|</th>                
+                        <th>Categoria|</th>
+                        <th>Presentación|</th>
+                        <th>Precio</th>
                     </tr>
                 </thead>
                 <tbody id="verProductosSectionjs"> </tbody>
             </table>
-        </div>
-
-        <div class="contenedor-centrado">
-            <a href="index.html">Menu principal</a>
-        </div>
         
 
+        <div class="contenedor-centrado">
+            <a href="index2.html">Menu ADMIN</a>
+        </div>
+    </div>
+</body>
         <script>
             // Listado
 const URL = "http://127.0.0.1:5000/"
@@ -50,10 +50,7 @@ fetch(URL + 'productos')
             let fila = document.createElement('tr');
             fila.innerHTML = '<td>' + producto.id_prod + '</td>' +
                 '<td>' + producto.nombre_prod + '</td>' +
-                '<td align="right">' + producto.des_prod + '</td>' +
                 '<td align="right">' + producto.proveedor + '</td>' +
-                // Mostrar miniatura de la imagen
-               // '<td><img src=./static/imagenes/' + producto.imagen_url +' alt="Imagen del producto" style="width: 100px;"></td>' +
                 '<td align="right">' + producto.categoria + '</td>'+
                 '<td align="right">' + producto.presentacion + '</td>' +
                 '<td align="right">' + producto.precio + '</td>'  ;

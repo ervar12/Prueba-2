@@ -1,8 +1,16 @@
-/* Estilos para todo el proyecto */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    background-image: url("imagenes.pro/IMG-20231203-WA0008.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .contenedor-centrado {
     display:flex;
@@ -11,7 +19,7 @@ body {
 }
 
 p {
-    font-family: 'Times New Roman', Times, serif;
+
     background-color: #f9f9f9;
     max-width: 400px;
     margin: 0 auto;
@@ -20,14 +28,14 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
-    color: #ff0000;
+    color: black;
 }
 
 form {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
+    background-color: cadetblue;
     border: 1px solid lightslategray;
     border-radius: 5px;
 }
@@ -66,27 +74,31 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color:black;
 }
 
 button {
     padding: 8px;
     margin:4px;
-    background-color: #007bff;
+    background-color: black;
     color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+ 
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #cd7b00;
+    align-items: center;
 }
 
 a {
     padding: 8px;
     margin:4px;
-    background-color: #fdab13;
+    
+/*---background-color: #fdab13;*/
+    background-color: black;
     color: #ffffff;
     border: none;
     border-radius: 5px;

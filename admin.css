@@ -1,0 +1,114 @@
+body {
+    background-color: rgba(119, 191, 191, 0.46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #1c99af;
+    border: 2px solid black;
+    display: flex;
+    width: 400px;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+button img {
+    width: 200px;
+    margin-right: 5px;
+}
+
+.form2 {
+    width: 350px;
+    text-align: center;
+}
+
+.form2 label {
+    display: block;
+    margin: 10px 0;
+}
+
+.form2 input,
+.form2 textarea,
+.form2 select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+
+.form2 button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form2 button.btn-back {
+    background-color: #f44336;
+}
+
+.form-section {
+    display: none;
+}
+
+table {
+    width: 400px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid black; 
+    background-color: white; 
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.vertical-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.vertical-table th,
+.vertical-table td {
+    width: 50%; /* Ajusta según sea necesario */
+    padding-right: 20px;
+    border-right: 1px solid #ddd; /* Agregado: Borde entre columnas */
+}
+
+.vertical-table th {
+    text-align: left;
+    border-right: none; /* Agregado: No hay borde derecho en los encabezados */
+}

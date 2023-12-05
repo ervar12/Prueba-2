@@ -118,7 +118,7 @@ class Catalogo:
 #--------------------------------------------------------------------
 # Crear una instancia de la clase Catalogo
 
-catalogo = Catalogo(host='localhost', user='root', password='', database='suplesport')
+catalogo = Catalogo(host='localhost', user='root', password='', database='app2')
 
 # Carpeta para guardar las imagenes.
 #ruta_destino = './static/imagenes/'
